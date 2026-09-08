@@ -16,14 +16,17 @@ Chrome/Cốc Cốc Manifest V3 extension for history cleanup and restore protect
 - Toolbar badge showing Auto Delete status.
 - v1/v2 protected-entry migration.
 
-## Install locally
-1. Unzip the release archive if you are using the packaged ZIP.
+## Install
+1. Unzip the archive.
 2. Open the browser extension manager.
 3. Enable Developer mode.
 4. Choose **Load unpacked**.
 5. Select the extracted folder that directly contains `manifest.json`.
 
-## Platform limits
-- The extension cannot replace Chrome/Cốc Cốc's system `Ctrl+Shift+T` shortcut. Restore Guard detects restored tabs/sessions and closes protected URLs as soon as the browser exposes them to extension APIs.
+## Test
+Run `npm test` from the project root. The repository contains unit and static regression tests for rule matching, settings normalization, PIN hashing, import merging, manifest references, and sensitive-action PIN gates.
+
+## Important platform limits
+- The extension cannot replace Chrome/Cốc Cốc's system `Ctrl+Shift+T` shortcut. Restore Guard detects restored tabs/sessions and closes protected URLs as soon as the browser exposes them to the extension APIs.
 - There is no reliable browser-close event for extensions, so "wipe on startup" is supported instead of claiming to wipe after the browser has already terminated.
 - PIN Lock is an extension-level privacy gate, not operating-system security; someone who can inspect the extension profile can inspect locally stored extension data.
