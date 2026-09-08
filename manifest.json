@@ -1,9 +1,8 @@
 {
   "manifest_version": 3,
   "name": "History Guard Pro",
-  "short_name": "HistoryGuard",
-  "version": "3.0.1",
-  "description": "Privacy control center: tự động dọn lịch sử, bảo vệ khôi phục, Smart Rules, Restore Center và Side Panel.",
+  "version": "3.0.2",
+  "description": "Privacy control center: tự động dọn lịch sử, bảo vệ khôi phục, Smart Rules, Restore Center.",
   "permissions": [
     "history",
     "tabs",
@@ -12,18 +11,26 @@
     "alarms",
     "sessions",
     "browsingData",
-    "contextMenus",
-    "sidePanel"
+    "contextMenus"
   ],
-  "background": {"service_worker": "src/service-worker.js"},
+  "background": {
+    "service_worker": "src/service-worker.js"
+  },
   "action": {
     "default_title": "History Guard Pro",
     "default_popup": "popup/popup.html"
   },
-  "side_panel": {"default_path": "sidepanel/sidepanel.html"},
-  "options_ui": {"page": "options/options.html", "open_in_tab": true},
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true
+  },
   "commands": {
-    "wipe-now": {"suggested_key": {"default": "Alt+Shift+H"}, "description": "History Guard Pro — Wipe Now"}
+    "wipe-now": {
+      "suggested_key": {
+        "default": "Alt+Shift+H"
+      },
+      "description": "History Guard Pro — Wipe Now"
+    }
   },
   "icons": {
     "16": "icons/icon16.png",
