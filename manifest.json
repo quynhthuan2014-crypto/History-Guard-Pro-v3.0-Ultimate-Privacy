@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "History Guard Pro",
-  "short_name": "History Guard Pro",
-  "version": "3.0.0",
+  "short_name": "HistoryGuard",
+  "version": "3.0.1",
   "description": "Privacy control center: tự động dọn lịch sử, bảo vệ khôi phục, Smart Rules, Restore Center và Side Panel.",
   "permissions": [
     "history",
